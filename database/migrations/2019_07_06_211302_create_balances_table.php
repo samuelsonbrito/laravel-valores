@@ -16,7 +16,7 @@ class CreateBalancesTable extends Migration
         Schema::create('balances', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->double('amount',10,2);
+            $table->double('amount',10,2)->default(0);
         });
     }
 

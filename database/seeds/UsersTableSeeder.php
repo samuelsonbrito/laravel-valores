@@ -17,5 +17,11 @@ class UsersTableSeeder extends Seeder
             'email' => 'samuelson@descompila.com.br',
             'password' => bcrypt('123456'),
         ]);
+
+        User::create([
+            'name' => 'Debora',
+            'email' => 'debora@descompila.com.br',
+            'password' => bcrypt('123456'),
+        ]);
     }
 }
